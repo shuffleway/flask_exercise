@@ -1,1 +1,5 @@
 flask-greek-calc/venv
+flask-greek-calc/calc/__pycache__
+flask-greek-calc/greet/__pycache__
+flask-madlibs/basic/__pycache__
+flask-madlibs/further-study/__pycache__
