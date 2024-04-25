@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Thanks for completing this survey!</h1><br/>
+<h2>Here is a summary of your survey</h2>
+
+{%for key , value in result_dict.items()%}
+   <p><b>{{key.question}}:</b> {{value}}</p>
+{%endfor%}
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  <p>{{responses}} </p>
+  <h1>{{ question.question }}</h1>
+  <form action="/answer" method="POST">
+    {% for choice in question.choices %}
+      {% if choice == "" %}
+        <p><input type="text" name="answer" value="{{ choice }}"> {{ choice }}</p>
+      {% else %}
+        <p><input type="radio" name="answer" value="{{ choice }}"> {{ choice }}</p>
+      {% endif %}
+    {% endfor %}
+    <button name="action" value="prev">prev</button>
+    <button name="action" value="skip">Skip</button> <br/>
+    </select>
+    <br/><button name="action" value="continue">Continue</button>
+  </form>
+{% endblock %}
+
