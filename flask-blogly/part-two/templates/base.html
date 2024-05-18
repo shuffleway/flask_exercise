@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blogly – {% block title %}{% endblock %}</title>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+ <nav class="container-nav">
+  
+    <div class="nav-ul2">
+      <li><a class="nav2-link" href="/">Blogly</a></li>
+    </div>
+    <ul class="nav-ul">
+      <li><a class="nav1-link" href="/">Home</a></li>
+      <li><a class="nav1-link" href="/users">Users</a></li>
+      <li><a class="nav1-link" href="/users/new">Add user</a></li>
+      <li><a class="nav1-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container1 container-content">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <section class="messages">
+        {% for category, message in messages %}
+        <!-- Use {{message}} instead of {{msg}} -->
+        <p class="{{category}}">{{message}}</p>
+        {% endfor %}
+      </section>
+    {% endif %}
+    {% endwith %}
+
+    {% block content %}
+     <!-- put the content here  -->
+    {% endblock %}
+
+  </div>
+</body>
+</html>
+
