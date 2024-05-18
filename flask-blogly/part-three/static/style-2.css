@@ -1,0 +1,195 @@
+
+body{
+    text-align: center;
+}
+
+.container-content {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  padding: 20px 25%;
+  font-size: 25px;
+  /* background-color: #f2f2f2;
+  border: 2px solid #ccc; */
+}
+
+
+
+.container-nav { 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Distribute space between navigation elements */
+}
+
+.nav-ul2 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #333;
+  width: 28%;
+  text-align: center;
+}
+
+.nav2-link { 
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: right; 
+  font-size: 3rem;
+  
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #333;
+  justify-content:center;
+  flex-grow: 1;
+  max-width: 50%; 
+  margin-right: auto;
+ 
+}
+  
+  .nav-ul li a {
+    display: block;
+    color: white;
+    /* text-align: center; */
+    padding: 20px 30px;
+    margin-top: 40px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .nav-ul li a:hover {
+    background-color: #111;
+  }
+
+
+
+
+
+
+.content-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center the list */
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+}
+  
+  .content-ul li {
+    display: block;
+    margin: 5px;
+    padding-left: 12px;
+    width: 100%; /* Full width to align text left within the centered content */
+  }
+  
+  .content-ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: inherit; /* Optional: ensures the link color is consistent */
+  }
+
+  .btn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  /* Adjust the width of the input fields if necessary */
+input[type="text"], input[type="title"], textarea {
+  width: 850px; /* Specify the width of the input fields */
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  textarea {
+    height: 700px; /* Specify the height of the textarea */
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .form-group {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    margin-bottom: 10px; /* Add some space between the groups */
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  .form-container {
+    display: flex; /* Use flexbox to align children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 100%; 
+    
+  }
+
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .post-detail{
+    text-align: left;
+  }
+
+
+
+  
+
+  img {
+    max-width: 450px; /* Maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Display block to apply margin */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+.messages p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    color: black;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.messages .success{
+   background-color: rgba(0, 255, 0, 0.1);
+}
+
+.messages .error {
+   background-color: rgba(255, 0, 0, 0.1);
+}
