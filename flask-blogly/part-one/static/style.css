@@ -1,0 +1,99 @@
+
+body{
+    text-align: center;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .nav-ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .nav-ul li a:hover {
+    background-color: #111;
+  }
+
+.content-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center the list */
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+}
+  
+  .content-ul li {
+    display: block;
+    margin: 5px;
+    padding-left: 12px;
+    /*text-align: left;*/ /* Keep text aligned to the left */
+    width: 100%; /* Full width to align text left within the centered content */
+  }
+  
+  .content-ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: inherit; /* Optional: ensures the link color is consistent */
+  }
+
+  .btn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  input[type=text]{
+    width: 850px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  img {
+    max-width: 450px; /* Maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Display block to apply margin */
+    margin: 0 auto; /* Center the image horizontally */
+  }
